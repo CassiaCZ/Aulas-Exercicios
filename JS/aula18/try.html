@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 18 - Try Catch</title>
+</head>
+<script>
+
+// if(m){  //erro m not defined
+//     console.log(m)
+// }
+
+//Precisa ser inteiro (nao float) e nao negativo
+let m = ""
+try{
+    if(typeof m != 'number') throw new Error('Digite um numero')
+    if(m < 0) throw new Error ('O numero nao pode ser negativo')
+    if(m % 1 !== 0) throw new Error ('Digite um numero inteiro')
+} catch (error) {
+    console.log(`O erro é :.. ${error}` )
+}finally{
+    console.log("Cheguei no finally")
+}
+
+</script>
+<body>
+    
+</body>
+</html>

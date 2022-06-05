@@ -1,0 +1,39 @@
+* {margin:0; padding: 0; box-sizing: border-box;}
+/* @import url('reset.css'); */
+@import url('videoMeet.css');
+
+body {
+    background-color: #202124;
+}
+
+
+main {
+    width: 100vw;
+    height: 100vh;
+    gap:10px;
+}
+
+.flex{
+    display: flex;  
+}
+
+.f-center_xy{
+    justify-content: center;
+    align-items: center;
+}
+
+.f-center_y{
+    align-items: center;
+}
+
+.f-alinhar_total_direita{
+    justify-content: flex-end;
+}
+
+.margin-r-10{
+    margin-right: 10px;
+}
+
+.margin-l-10{
+    margin-left: 10px;
+}
